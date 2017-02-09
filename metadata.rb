@@ -10,4 +10,3 @@ issues_url 'https://github.com/brentm5/workup-brentm5/issues' if respond_to?(:is
 source_url 'https://github.com/brentm5/workup-brentm5' if respond_to?(:source_url)
 
 depends 'homebrew'
-depends 'ruby_rbenv'
