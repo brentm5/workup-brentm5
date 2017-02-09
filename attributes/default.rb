@@ -30,7 +30,8 @@ default['workup-brentm5']['brew_packages'] = [
 
 default['workup-brentm5']['cask_packages'] = [
   'slate',
-  'vagrant'
+  'vagrant',
+  'zoomus'
 ]
 default['workup-brentm5']['rbenv'] = {
   'global': '2.3.1',
