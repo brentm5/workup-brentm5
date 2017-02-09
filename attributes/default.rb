@@ -1,9 +1,45 @@
 
 default['workup-brentm5']['home_dir'] = Dir.home
 
-default['workup-brentm5']['brew_packages'] = [
-  'wget'
+default['workup-brentm5']['brew_taps'] = [
+  'caskroom/cask',
+  'thoughtbot/formulae'
 ]
+
+default['workup-brentm5']['brew_packages'] = [
+  'bash',
+  'git',
+  'jq',
+  'maven',
+  'pdsh',
+  'phantomjs',
+  'pick',
+  'readline',
+  'reattach-to-user-namespace',
+  'rbenv',
+  'ruby-build',
+  'rcm',
+  'siege',
+  'sl',
+  'tree',
+  'tmux',
+  'vim',
+  'wget',
+  'zplug'
+]
+
+default['workup-brentm5']['cask_packages'] = [
+  'slate',
+  'vagrant'
+]
+default['workup-brentm5']['rbenv'] = {
+  'global': '2.3.1',
+  'versions': [
+    '2.3.0',
+    '2.3.1',
+    '2.4.0'
+  ]
+}
 
 default['workup-brentm5']['binaries'] = {
   'ftree': {
