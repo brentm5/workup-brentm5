@@ -7,6 +7,7 @@ default['workup-brentm5']['brew_taps'] = [
 ]
 
 default['workup-brentm5']['brew_packages'] = [
+  'awscli',
   'bash',
   'git',
   'jq',
