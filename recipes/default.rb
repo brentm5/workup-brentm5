@@ -41,16 +41,5 @@ settings['binaries'].each do |file, value|
   end
 end
 
-settings['rbenv']['versions'].each do |version|
-  execute "install ruby #{version}" do
-    action :run
-    command "rbenv install -f #{version}"
-    not_if "rbenv versions | grep -q #{version}"
-  end
-end
-
-file "#{settings['home_dir']}/.rbenv/version" do
-  action :create
-  content "#{settings['rbenv']['global']}\n"
-  mode 0644
-end
+include_recipe 'workup-brentm5::_setup_rbenv'
+include_recipe 'workup-brentm5::_setup_kitchen'

@@ -31,6 +31,7 @@ default['workup-brentm5']['brew_packages'] = [
 
 default['workup-brentm5']['cask_packages'] = [
   'slate',
+  'vlc',
   'vagrant',
   'zoomus'
 ]
