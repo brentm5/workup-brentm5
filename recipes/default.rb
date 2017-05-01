@@ -22,24 +22,12 @@ end
 
 settings['cask_packages'].each do |package|
   homebrew_cask package do
-    action :cask
+    action :install
     not_if { File.exists?("/usr/local/Caskroom/#{package}") }
   end
 end
 
-bin_dir = "#{settings['home_dir']}/.bin"
-directory bin_dir do
-  action :create
-  mode '0755'
-end
 
-settings['binaries'].each do |file, value|
-  remote_file "#{bin_dir}/#{file}" do
-    action :create
-    source value['url']
-    checksum value['checksum'] if value['checksum']
-  end
-end
-
+include_recipe 'workup-brentm5::_setup_bin'
 include_recipe 'workup-brentm5::_setup_rbenv'
 include_recipe 'workup-brentm5::_setup_kitchen'
