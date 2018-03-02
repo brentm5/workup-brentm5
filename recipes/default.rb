@@ -29,5 +29,5 @@ end
 
 
 include_recipe 'workup-brentm5::_setup_bin'
-include_recipe 'workup-brentm5::_setup_rbenv'
+include_recipe 'workup-brentm5::_setup_asdf'
 include_recipe 'workup-brentm5::_setup_kitchen'

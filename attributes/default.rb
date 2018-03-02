@@ -17,8 +17,6 @@ default['workup-brentm5']['brew_packages'] = [
   'pick',
   'readline',
   'reattach-to-user-namespace',
-  'rbenv',
-  'ruby-build',
   'rcm',
   'siege',
   'sl',
@@ -26,7 +24,8 @@ default['workup-brentm5']['brew_packages'] = [
   'tmux',
   'vim',
   'wget',
-  'zplug'
+  'zplug',
+  'watch'
 ]
 
 default['workup-brentm5']['cask_packages'] = [
@@ -35,12 +34,19 @@ default['workup-brentm5']['cask_packages'] = [
   'vagrant',
   'zoomus'
 ]
-default['workup-brentm5']['rbenv'] = {
-  'global': '2.3.1',
+default['workup-brentm5']['asdf']['ruby'] = {
   'versions': [
     '2.3.0',
-    '2.3.1',
-    '2.4.0'
+    '2.3.5',
+    '2.4.2',
+  ]
+}
+
+default['workup-brentm5']['asdf']['nodejs'] = {
+  'versions': [
+    '0.12.18',
+    '6.12.0',
+    '9.2.0',
   ]
 }
 
