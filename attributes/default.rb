@@ -2,18 +2,18 @@
 default['workup-brentm5']['home_dir'] = Dir.home
 
 default['workup-brentm5']['brew_taps'] = [
-  'caskroom/cask',
-  'thoughtbot/formulae'
+  'thoughtbot/formulae',
+  'michaeldfallen/formula',
 ]
 
 default['workup-brentm5']['brew_packages'] = [
   'awscli',
   'bash',
   'git',
+  'git-radar',
   'jq',
   'maven',
   'pdsh',
-  'phantomjs',
   'pick',
   'readline',
   'reattach-to-user-namespace',
@@ -25,7 +25,7 @@ default['workup-brentm5']['brew_packages'] = [
   'vim',
   'wget',
   'zplug',
-  'watch'
+  'watch',
 ]
 
 default['workup-brentm5']['cask_packages'] = [
@@ -58,6 +58,5 @@ default['workup-brentm5']['binaries'] = {
 }
 
 default['workup-brentm5']['scripts'] = [
-  'tmux-spotify-info',
   'git-working-history'
 ]
