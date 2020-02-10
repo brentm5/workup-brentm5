@@ -42,6 +42,24 @@ default['workup-brentm5']['asdf']['ruby'] = {
   ]
 }
 
+default['workup-brentm5']['asdf']['python'] = {
+  'versions': [
+    '3.7.2',
+  ]
+}
+
+default['workup-brentm5']['asdf']['packer'] = {
+  'versions': [
+    '1.5.1',
+  ]
+}
+
+default['workup-brentm5']['asdf']['terraform'] = {
+  'versions': [
+    '0.12.9',
+  ]
+}
+
 default['workup-brentm5']['asdf']['nodejs'] = {
   'versions': [
     '0.12.18',
